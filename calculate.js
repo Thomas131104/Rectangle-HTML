@@ -1,14 +1,23 @@
-export function calculate(dai, rong)
+ export class Rectangle
 {
-    if (isNaN(dai) || isNaN(rong) || (dai <= 0) || (rong <= 0))
+    constructor(width, height)
     {
-        return -1;
+        this.width = width;
+        this.height = height;
     }
-    else
+
+    isExist()
     {
-        return {
-            'cv' : 2*(dai+rong),
-            'dt' : dai*rong
-        };
+        return !(this.width <= 0 || Number.isFinite(this.width) || this.height <= 0 || Number.isFinite(this.height));
+    }
+
+    perimeter()
+    {
+        return this.isExist() ? 2*(this.width + this.height) : 0;
+    }
+
+    area()
+    {
+        return this.isExist() ? Math.round(this.width * this.height) : 0;
     }
 }
