@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hình chữ nhật</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="input">
+
+        <form>
+            <div class="dai">
+                <label for="dai">Nhập chiều dài: </label>
+                <input type="number" id="dai" value="0" min="0">
+            </div>
+            <br>
+
+            <div class="dai">
+                <label for="rong">Nhập chiều rộng: </label>
+                <input type="number" id="rong" value="0" min="0">
+            </div>
+        </form>
+
+        <button id="ok">OK!</button>
+
+        <div class="ans">
+            <h4>Kết quả</h4>
+            <p class="cv">Chu vi: <span id="cv"></span></p>
+            <p class="dt">Diện tích: <span id="dt"></span></p>
+        </div>
+    </section>
+    
+    <script src="index.js" type="module"></script>
+</body>
+</html>
