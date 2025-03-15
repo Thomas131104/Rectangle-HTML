@@ -27,11 +27,13 @@
 
 ## Cấu trúc thư mục
 
+```
 .
 ├── index.html        # Giao diện người dùng
 ├── styles.css        # Định dạng giao diện
 ├── calculate.js      # Logic tính chu vi và diện tích
 └── index.js          # Xử lý sự kiện và kết nối các file JS
+```
 
 ## Các chức năng chính
 
