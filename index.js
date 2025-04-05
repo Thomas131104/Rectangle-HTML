@@ -3,7 +3,7 @@ import {Rectangle} from './calculate.js';
 
 let button = document.getElementById('ok');
 
-button.addEventListener('click', (e) => {
+button.addEventListener('click', () => {
     let width = parseFloat(document.getElementById('dai').value);
     let height = parseFloat(document.getElementById('rong').value);
     
